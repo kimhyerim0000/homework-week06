@@ -35,8 +35,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
   void onDaySelected(DateTime selectedDay, DateTime focusedDay) {
     // 날짜 선택 시 실행할 함수
-    setState(() { // 상태 변경 알리기
-      selectedDate = selectedDay; // 선택된 날짜 업데이트
+    setState(() { 
+      selectedDate = selectedDay; 
     });
   }
 }
