@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:myapp/week05/calendar_scheduler/component/main_calendar.dart';
 
 class HomeScreen extends StatefulWidget {
+  // StatelessWidget에서 StatefulWidget으로 전환
   const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+  }
 
   @override
   Widget build(BuildContext context) {
