@@ -38,6 +38,7 @@ class _Time extends StatelessWidget {
     );
   }
 }
+
 class _Content extends StatelessWidget{
   final String content;
 
@@ -49,7 +50,9 @@ class _Content extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      
-    )
+      child: Text(
+        content,
+      )
+    );
   }
 }
