@@ -34,13 +34,14 @@ class ScheduleCard extends StatelessWidget {
               endTime: endTime,
              ),
              SizedBox(width: 16.0),
-             _Content(
+             _Content(  // 일정 내용을 보여줄 위젯젯
               content: content,
               ),
               SizedBox(width: 16.0),
-            ]
-          )
-        ) ,)
+            ],
+          ),
+        ) 
+      ,)
     );
   }
 }
