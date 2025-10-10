@@ -17,10 +17,10 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
 
     return SafeArea(
       child: Container(
-        height: MediaQuery.of(context).size.height / 2,
+        height: MediaQuery.of(context).size.height / 2 + bottomInset,
         color: Colors.white,
         child: Padding(
-          padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
+          padding: EdgeInsets.only(left: 8, right: 8, top: 8),
           child: Column(
             // 시간 관련 텍스트 필드와 내용 관련 텍스트 필드 세로로 배치치
             children: [
