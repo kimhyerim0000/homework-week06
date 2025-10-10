@@ -17,6 +17,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
 
     return SafeArea(
       child: Container(
+        // 화면 반 높이에 키보드 높이 추가하기기
         height: MediaQuery.of(context).size.height / 2 + bottomInset,
         color: Colors.white,
         child: Padding(
