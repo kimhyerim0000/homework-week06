@@ -29,10 +29,10 @@ class _HomeScreenState extends State<HomeScreen> {
               // 날짜가 선택됐을 때 실행할 함수
               onDaySelected: onDaySelected,
             ),
-            ScheduleCard( // 일정 카드 위젯 보여주기
+            ScheduleCard( // 구현해둔 일정 카드
               startTime: 12,
               endTime: 14,
-              content: '',
+              content: '프로그래밍 공부',
             ),
           ],
         ),
