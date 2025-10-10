@@ -33,11 +33,13 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
                   const SizedBox(width: 16.0),
                   Expanded(
                     child: CustomTextField(
-                      
-                    )
-                  )
+                      label: '종료 시간',
+                      isTime: true,
+                    ),
+                  ),
                 ],
-              )
+              ),
+              
             ]
           )
         )
