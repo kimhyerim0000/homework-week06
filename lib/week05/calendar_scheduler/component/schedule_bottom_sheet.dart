@@ -21,7 +21,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
         height: MediaQuery.of(context).size.height / 2 + bottomInset,
         color: Colors.white,
         child: Padding(
-          padding: EdgeInsets.only(left: 8, right: 8, top: 8),
+          padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: bottomInset), // 패딩에 키보드 높이 추가해서 위젯 전반적으로 위로 올려주기
           child: Column(
             // 시간 관련 텍스트 필드와 내용 관련 텍스트 필드 세로로 배치치
             children: [
