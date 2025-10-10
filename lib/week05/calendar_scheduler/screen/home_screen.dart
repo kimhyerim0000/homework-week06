@@ -10,6 +10,11 @@ class HomeScreen extends StatefulWidget {
   }
 
 class _HomeScreenState extends State<HomeScreen> {
+  DateTime selectedDate = DateTime.utc(
+    DateTime.now().year,
+    DateTime.now().month,
+    DateTime.now().day,
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
