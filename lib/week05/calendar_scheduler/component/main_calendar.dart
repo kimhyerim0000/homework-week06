@@ -16,7 +16,7 @@ class MainCalendar extends StatelessWidget {
     return TableCalendar(
       onDaySelected: onDaySelected,
       // 날짜 선택 시 실행할 함수
-      selectedDayPredicate: (date) =>
+      selectedDayPredicate: (date) => // 선택된 날짜를 구분할 로직
         date.year == selectedDate.year &&
         date.month == selectedDate.month &&
         date.day == selectedDate.day,
