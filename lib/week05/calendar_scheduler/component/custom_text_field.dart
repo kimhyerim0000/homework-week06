@@ -24,7 +24,13 @@ class CustomTextField extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
         ),
-        TextFormField(), // 폼 안에서 텍스트 필드를 쓸 때 사용
+        Expanded(
+          flex: isTime ? 0 : 1,
+          child: TextFormField(
+            cursorColor: Colors.grey,
+            maxLines: isTime ? 1 : null,
+          )
+        )
       ],
     );
   }
