@@ -15,7 +15,7 @@ class _Time extends StatelessWidget {
   Widget build(BuildContext context) {
     final textStyle = TextStyle(
       fontWeight: FontWeight.w600,
-      color: PRI
+      color: PRIMARY_COLOR,
     )
   }
 
