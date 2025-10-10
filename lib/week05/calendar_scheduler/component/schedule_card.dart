@@ -20,7 +20,13 @@ class _Time extends StatelessWidget {
     );
 
     return Column(
-      
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          '${startTime.toString().padLeft(2,'0')}:00',
+          
+        )
+      ]
     )
   }
 
