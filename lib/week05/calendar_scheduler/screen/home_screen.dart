@@ -21,13 +21,14 @@ class _HomeScreenState extends State<HomeScreen> {
   );
   @override
   Widget build(BuildContext context) {
+    // build() 함수 내부 Scaffold 위젯
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton( // 새 일정 버튼
         backgroundColor: PRIMARY_COLOR,
         onPressed: () {
-          showModalBottomSheet(
+          showModalBottomSheet( // BottomSheet 열기
             context: context,
-            isDismissible: true,
+            isDismissible: true,  // 배경 탭했을 때 BottomSheet 닫기
             builder: (_) => ScheduleBottomSheet(),
           );
         },
