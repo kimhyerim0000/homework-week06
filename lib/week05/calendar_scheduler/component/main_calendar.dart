@@ -23,8 +23,12 @@ class MainCalendar extends StatelessWidget {
           borderRadius: BorderRadius.circular(6.0),
           color: LIGHT_GREY_COLOR,
         ),
+        weekendDecoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(6.0),
+          color: LIGHT_GREY_COLOR,
+        ),
+        selectedDecoration: BorderRadius.circular(6.0),
       ),
-      
     );
   }
 }
