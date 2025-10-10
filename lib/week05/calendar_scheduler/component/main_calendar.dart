@@ -16,13 +16,6 @@ class MainCalendar extends StatelessWidget {
           fontWeight: FontWeight.w700,
           fontSize: 16.0,
         ),
-        calendarStyle: CalendarStyle(
-          isTodayHighlighted: false,
-          defaultDecoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(6.0),
-            color: LIGHT_GREY_COLOR,
-          ),
-          
         ),
       )
     );
