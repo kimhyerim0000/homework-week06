@@ -30,6 +30,12 @@ class CustomTextField extends StatelessWidget {
             cursorColor: Colors.grey, // 커서 색상 변경경
             maxLines: isTime ? 1 : null,
             expands: !isTime,
+            keyboardType: isTime ? TextInputType.number : TextInputType.multiline,
+            inputFormatters: isTime
+             ? [
+              FilteringTextInputFormatter.digitsOnly,
+            ]
+                : [],
           )
         )
       ],
