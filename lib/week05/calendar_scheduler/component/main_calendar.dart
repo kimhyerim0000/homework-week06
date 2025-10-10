@@ -10,7 +10,7 @@ class MainCalendar extends StatelessWidget {
       lastDay: DateTime(3000, 1, 1), // 마지막 날
       focusedDay: DateTime.now(), // 화면에 보여지는 날
       headerStyle: HeaderStyle(   // 달력 최상단 스타일
-        titleCentered: true,      // 달력 크기 선택 옵션 없애기
+        titleCentered: true,      // 제목 중앙에 위치하기기
         formatButtonVisible: false, // 달력 크기 선택 옵션 없애기기
         titleTextStyle: TextStyle(
           fontWeight: FontWeight.w700,
@@ -19,11 +19,12 @@ class MainCalendar extends StatelessWidget {
       ),
       calendarStyle: CalendarStyle(
         isTodayHighlighted: false,
-        defaultDecoration: BoxDecoration(
+        defaultDecoration: BoxDecoration( // 기본 날짜 스타일일
           borderRadius: BorderRadius.circular(6.0),
           color: LIGHT_GREY_COLOR,
         ),
       ),
+      
     );
   }
 }
