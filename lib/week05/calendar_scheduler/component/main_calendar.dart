@@ -11,6 +11,14 @@ class MainCalendar extends StatelessWidget {
       focusedDay: DateTime.now(), // 화면에 보여지는 날
       headerStyle: HeaderStyle(
         titleCentered: true,
+        formatButtonVisible: false,
+        titleTextStyle: TextStyle(
+          fontWeight: FontWeight.w700,
+          fontSize: 16.0,
+        ),
+        calendarStyle: CalendarStyle(
+
+        ),
       )
     );
   }
