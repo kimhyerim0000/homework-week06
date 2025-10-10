@@ -18,6 +18,10 @@ class _Time extends StatelessWidget {
       color: PRIMARY_COLOR,
       fontSize: 16.0,
     );
+
+    return Column(
+      
+    )
   }
 
 }
