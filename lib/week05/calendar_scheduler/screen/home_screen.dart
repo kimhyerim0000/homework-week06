@@ -22,6 +22,15 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: PRIMARY_COLOR,
+        onPressed: () {
+          showModalBottomSheet(
+            context: context,
+            
+          )
+        }
+      )
       body: SafeArea(   // 시스템 UI 피해서 UI 구현하기
         child: Column(  // 달력과 리스트를 세로로 배치
           children: [
