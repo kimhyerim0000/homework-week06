@@ -5,7 +5,9 @@ class MainCalendar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TableCalendar(
-      firstDay
-    )
+      firstDay: DateTime(1800, 1, 1), // 첫째 날
+      lastDay: DateTime(3000, 1, 1), // 마지막 날
+      focusedDay: DateTime.now(),
+    );
   }
 }
