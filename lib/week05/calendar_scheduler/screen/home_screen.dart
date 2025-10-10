@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/week05/calendar_scheduler/component/main_calendar.dart';
+import 'package:myapp/week05/calendar_scheduler/component/schedule_card.dart';
 
 class HomeScreen extends StatefulWidget {
   // StatelessWidget에서 StatefulWidget으로 전환
