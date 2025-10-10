@@ -1,6 +1,9 @@
 import 'package:myapp/week05/calendar_scheduler/const/colors.dart';
 import 'package:flutter/material.dart';
 
+class
+
+
 class _Time extends StatelessWidget {
   final int startTime; // 시작 시간
   final int endTime;  // 종료 시간간
@@ -49,7 +52,7 @@ class _Content extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return Expanded(  // 최대한 넓게 늘리기
       child: Text(
         content,
       )
