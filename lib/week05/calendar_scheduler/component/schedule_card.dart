@@ -28,10 +28,11 @@ class _Time extends StatelessWidget {
         ),
         Text(
           '${endTime.toString().padLeft(2,'0')}:00',
-          style: textStyle,
-        )
+          style: textStyle.copyWith(
+            fontSize: 10.0,
+          ),
+        ),
       ]
-    )
+    );
   }
-
 }
