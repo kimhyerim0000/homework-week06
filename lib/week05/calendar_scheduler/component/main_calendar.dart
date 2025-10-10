@@ -3,6 +3,8 @@ import 'package:table_calendar/table_calendar.dart';
 import 'package:myapp/week05/calendar_scheduler/const/colors.dart';
 
 class MainCalendar extends StatelessWidget {
+  final OnDaySelected onDaySelected;
+  final DateTime selectedDate;
   @override
   Widget build(BuildContext context) {
     return TableCalendar(
