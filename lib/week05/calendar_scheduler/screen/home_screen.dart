@@ -10,7 +10,9 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             MainCalendar(),
-          ],) ,),
+          ],
+        ),
+      ),
     );
   }
 }
