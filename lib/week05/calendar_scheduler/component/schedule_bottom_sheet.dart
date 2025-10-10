@@ -39,7 +39,9 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
                   ),
                 ],
               ),
-              
+              SizedBox(height: 8.0,
+              )
+
             ]
           )
         )
