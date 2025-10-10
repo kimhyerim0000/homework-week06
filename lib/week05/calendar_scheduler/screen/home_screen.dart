@@ -7,7 +7,7 @@ class HomeScreen extends StatefulWidget {
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
-  }
+}
 
 class _HomeScreenState extends State<HomeScreen> {
   DateTime selectedDate = DateTime.utc( // 선택된 날짜를 관리할 변수수
@@ -33,9 +33,11 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-}
-void onDaySelected(DateTime selectedDay, DateTime focusedDay) {
-    setState((){
-      
-    })
+  void onDaySelected(DateTime selectedDay, DateTime focusedDay) {
+    // 날짜 선택 시 실행할 함수
+    setState(() { // 상태 변경 알리기
+      selectedDate = selectedDay; // 선택된 날짜 업데이트
+    });
   }
+}
+
