@@ -29,7 +29,11 @@ class ScheduleCard extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              
+             _Time(
+              startTime: startTime,
+              endTime: endTime,
+             ),
+             ) 
             ]
           )
         ) ,)
