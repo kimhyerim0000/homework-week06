@@ -7,8 +7,8 @@ class CustomTextField extends StatelessWidget {
   final bool isTime;
 
   const CustomTextField({
-    required this.label,
-    required this.isTime,
+    required this.label,  // 텍스트 필드 제목
+    required this.isTime, // 시간 선택하는 텍스트 필드인지 여부
     Key? key,
   }) : super(key: key);
 
