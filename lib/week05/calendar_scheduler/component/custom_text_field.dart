@@ -44,9 +44,9 @@ class CustomTextField extends StatelessWidget {
               fillColor: Colors.grey[300], // 배경색
               suffixText: isTime ? '시' : null,
               // 시간 관련 텍스트 필드는 '시' 접미사 추가
-            )
-          )
-        )
+            ),
+          ),
+        ),
       ],
     );
   }
