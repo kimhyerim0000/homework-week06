@@ -46,6 +46,13 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
                   isTime: false,
                 ),
               ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: onSavePressed,
+                  
+                )
+              )
             ]
           )
         )
