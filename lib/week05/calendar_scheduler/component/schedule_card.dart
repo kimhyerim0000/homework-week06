@@ -16,7 +16,8 @@ class _Time extends StatelessWidget {
     final textStyle = TextStyle(
       fontWeight: FontWeight.w600,
       color: PRIMARY_COLOR,
-    )
+      fontSize: 16.0,
+    );
   }
 
 }
