@@ -30,7 +30,10 @@ class _HomeScreenState extends State<HomeScreen> {
             isDismissible: true,
             builder: (_) => ScheduleBottomSheet(),
           );
-        }
+        },
+        child: Icon(
+          Icons.add,
+        ),
       ),
       body: SafeArea(   // 시스템 UI 피해서 UI 구현하기
         child: Column(  // 달력과 리스트를 세로로 배치
