@@ -30,6 +30,12 @@ class _HomeScreenState extends State<HomeScreen> {
               // 날짜가 선택됐을 때 실행할 함수
               onDaySelected: onDaySelected,
             ),
+            SizedBox(height: 8.0),
+            TodayBanner(
+              selectedDate: selectedDate,
+              count: 0,
+            ),
+            SizedBox(height: 8.0),
             ScheduleCard( // 구현해둔 일정 카드
               startTime: 12,
               endTime: 14,
