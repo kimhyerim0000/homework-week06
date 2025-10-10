@@ -9,9 +9,9 @@ class MainCalendar extends StatelessWidget {
       firstDay: DateTime(1800, 1, 1), // 첫째 날
       lastDay: DateTime(3000, 1, 1), // 마지막 날
       focusedDay: DateTime.now(), // 화면에 보여지는 날
-      headerStyle: HeaderStyle(   /
-        titleCentered: true,
-        formatButtonVisible: false,
+      headerStyle: HeaderStyle(   // 달력 최상단 스타일
+        titleCentered: true,      // 달력 크기 선택 옵션 없애기
+        formatButtonVisible: false, // 달력 크기 선택 옵션 없애기기
         titleTextStyle: TextStyle(
           fontWeight: FontWeight.w700,
           fontSize: 16.0,
