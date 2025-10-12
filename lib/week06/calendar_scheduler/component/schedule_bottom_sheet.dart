@@ -3,7 +3,7 @@ import 'package:myapp/week05/calendar_scheduler/const/colors.dart';
 import 'package:flutter/material.dart';
 
 class ScheduleBottomSheet extends StatefulWidget {
-  const ScheduleBottomSheet({Key? key}) : super(key: key);
+  const ScheduleBottomSheet({super.key});
 
   @override
   State<ScheduleBottomSheet> createState() => _ScheduleBottomSheetState();
