@@ -102,4 +102,6 @@ String? timeValidator(String? val) {
   if (val ==null) {
     return '값을 입력해주세요';
   }
+
+  int? 
 }
