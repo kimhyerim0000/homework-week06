@@ -13,5 +13,12 @@ class LocalDatabase extends _$LocalDatabase {
   Stream<List<Schedules>> watchSchedules(DateTime date) =>
   (select(schedules)..where((tbl) => tbl.date.equals(date))).watch();
 
-  Future<int> create
+  Future<int> createSchedule(SchedulesCompanion data) =>
+    into(schedules).insert(data);
+
+  Future<int> removeSchedule(int id) =>
+    (delete(schedules)..where((tbl) => tbl.id.equals(id))).go();
+
+  @override
+  int get sche 
 }
