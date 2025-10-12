@@ -103,5 +103,11 @@ String? timeValidator(String? val) {
     return '값을 입력해주세요';
   }
 
-  int? 
+  int? number;
+
+  try {
+    number = int.parse(val);
+  } catch (e) {
+    return '숫자를 입력해주세요';
+  }
 }
