@@ -12,7 +12,7 @@ part 'drift_database.g.dart';
   tables: [
     Schedules
   ],
-)
+);
 
 class LocalDatabase extends _$LocalDatabase {
 
