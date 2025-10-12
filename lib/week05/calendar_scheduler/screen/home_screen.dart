@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         child: Icon(
           Icons.add,
-          color: Colors.white,
+          colors: Colors.white,
         ),
       ),
       body: SafeArea(   // 시스템 UI 피해서 UI 구현하기
