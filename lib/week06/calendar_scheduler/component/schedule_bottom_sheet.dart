@@ -39,6 +39,11 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
                       child: CustomTextField( // 시작 시간 입력 필드
                         label: '시작 시간',
                         isTime: true,
+                        onSaved: (String? val) {
+                          // 저장이 실행되면 startTime 변수에 텍스트 필드값 저장
+                          startTime= int.parse(val!);
+                        },
+                        validator: timeValidator,
                       ),
                     ),
                     const SizedBox(width: 16.0),
