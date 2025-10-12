@@ -113,6 +113,17 @@ String? timeValidator(String? val) {  // 시간 검증 함수
   }
 
   if (number <0 || number > 24) {
-
+    return '0시부터 24시 사이를 입력해주세요';
   }
+
+  return null;
+}
+
+// 미리 정의해둔 함수
+String? contentValidator(String? val) {
+  if(val == null || val.length ==0) {
+    return '값을 입력해주세요';
+  }
+
+  return null;
 }
