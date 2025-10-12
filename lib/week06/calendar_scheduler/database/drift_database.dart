@@ -8,3 +8,5 @@ part 'drift_database.g.dart';
     Schedules
   ],
 )
+
+class LocalDatabase extends _$LocalDatabase {}
