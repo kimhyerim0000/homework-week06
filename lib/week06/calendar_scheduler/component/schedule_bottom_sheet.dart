@@ -65,6 +65,11 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
                   child: CustomTextField( // 내용 입력 필드
                     label: '내용',
                     isTime: false,
+                    onSaved: (String? val) {
+                    // 저장이 실행되면 content 변수에 텍스트 필드값 저장
+                      content= val;
+                    },
+                    validator: contentValidator,
                   ),
                 ),
                 SizedBox(
