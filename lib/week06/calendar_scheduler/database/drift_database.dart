@@ -1,6 +1,8 @@
 import 'package:myapp/week06/calendar_scheduler/model/schedule.dart';
 import 'package:drift/drift.dart';
 
+import 'package:drift/native.dart';
+
 part 'drift_database.g.dart';
 
 @DriftDatabase(
@@ -11,8 +13,8 @@ part 'drift_database.g.dart';
 
 class LocalDatabase extends _$LocalDatabase {
   Stream<List<Schedule>> watchSchedules(DateTime date) {
-  return (select(schedules)..where((s) => s.date.equals(date))).watch();
-}
+   return (select(schedules)..where((s) => s.date.equals(date))).watch();
+  }
   Future<int> createSchedule(SchedulesCompanion data) =>
     into(schedules).insert(data);
 
