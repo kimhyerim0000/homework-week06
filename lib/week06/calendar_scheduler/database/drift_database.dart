@@ -3,7 +3,8 @@ import 'package:drift/drift.dart';
 
 import 'package:drift/native.dart';
 import 'package:path_provide/path_provider.dart';
-import 'package'
+import 'package:path/path.dart' as p;
+import 'dart:io';
 
 part 'drift_database.g.dart';
 
