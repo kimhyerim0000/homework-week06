@@ -90,7 +90,11 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
       ),
     );
   }
+
   void onSavePressed() {
 
+    String? timeValidator(String? val) {}      // 시간값 검증
+
+    String? contentValidator(String? val) {}   // 내용값 검증
   }
 }
