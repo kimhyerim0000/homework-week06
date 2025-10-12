@@ -33,7 +33,7 @@ class LocalDatabase extends _$LocalDatabase {
 
 LazyDatabase _openConnection(){
   return LazyDatabase(() async {
-    final dbFilder= await getApplicationDocumentsDirectory();
-    final file = File
+    final dbFolder= await getApplicationDocumentsDirectory();
+    final file = File(p.join(dbFolder))
   })
 }
