@@ -14,6 +14,12 @@ part 'drift_database.g.dart';
   ],
 )
 
+@override
+String toString() {
+  return (StringBuffer('SchedulesCompanion(
+ )
+}
+
 class LocalDatabase extends _$LocalDatabase {
 
   LocalDatabase() :super(_openConnection());
