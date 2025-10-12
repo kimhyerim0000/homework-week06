@@ -10,9 +10,9 @@ part 'drift_database.g.dart';
 )
 
 class LocalDatabase extends _$LocalDatabase {
-  Stream<List<Schedules>> watchSchedules(DateTime date) =>
-    (select(schedules)..where((tbl) => tbl.date.equals(date))).watch();
-
+  Stream<List<Schedule>> watchSchedules(DateTime date) {
+  return (select(schedules)..where((s) => s.date.equals(date))).watch();
+}
   Future<int> createSchedule(SchedulesCompanion data) =>
     into(schedules).insert(data);
 
