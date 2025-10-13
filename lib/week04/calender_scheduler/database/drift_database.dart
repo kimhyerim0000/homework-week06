@@ -1,4 +1,5 @@
 import 'package:myapp/week04/calender_scheduler/model/schedule.dart';
+import 'package:drift/drift.dart';
 
 part 'drift_database.g.dart';
 
