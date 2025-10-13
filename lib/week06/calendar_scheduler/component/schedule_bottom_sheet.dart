@@ -93,9 +93,13 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
 
   void onSavePressed() {}
 
-  String? timeValidator(String? val) {}      // 시간값 검증
+  String? timeValidator(String? val) {
+    return null;
+  }      // 시간값 검증
 
-  String? contentValidator(String? val) {}   // 내용값 검증
+  String? contentValidator(String? val) {
+    return null;
+  }   // 내용값 검증
   
 }
 // 미리 정의해둔 함수수
@@ -121,7 +125,7 @@ String? timeValidator(String? val) {  // 시간 검증 함수
 
 // 미리 정의해둔 함수
 String? contentValidator(String? val) { // 내용 검증 함수
-  if(val == null || val.length ==0) {
+  if(val == null || val.isEmpty) {
     return '값을 입력해주세요';
   }
 
