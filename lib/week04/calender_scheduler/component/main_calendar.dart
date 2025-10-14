@@ -6,7 +6,7 @@ class MainCalendar extends StatelessWidget {
   final OnDaySelected onDaySelected;    // 날짜 선택 시 실행할 함수
   final DateTime selectedDate;          // 선택된 날짜
 
-  MainCalendar({
+  const MainCalendar({super.key, 
     required this.onDaySelected,
     required this.selectedDate,
   });
