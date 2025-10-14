@@ -8,8 +8,8 @@ class _Time extends StatelessWidget {
   const _Time({  
     required this.startTime,
     required this.endTime,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {  
@@ -44,9 +44,10 @@ class _Content extends StatelessWidget {
 
   const _Content({  
     required this.content,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
+  @override
   Widget build(BuildContext context) {
     return Expanded(      // 최대한 넓게 늘리기
       child: Text(  
@@ -66,9 +67,10 @@ class ScheduleCard extends StatelessWidget {
     required this.startTime,
     required this.endTime,
     required this.content,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
+  @override
   Widget build(BuildContext context) {
     return Container(  
       decoration: BoxDecoration(  
