@@ -4,7 +4,6 @@ import 'package:myapp/week04/calender_scheduler/component/today _banner.dart';
 import 'package:myapp/week04/calender_scheduler/component/schedule_card.dart';
 import 'package:myapp/week04/calender_scheduler/component/main_calendar.dart';
 import 'package:flutter/material.dart';
-import 'package:table_calendar/table_calendar.dart';
 
 // StatelessWidget에서 StatefulWidget으로 전환
 class HomeScreen extends StatefulWidget {

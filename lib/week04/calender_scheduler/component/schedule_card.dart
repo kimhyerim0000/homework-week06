@@ -8,7 +8,6 @@ class _Time extends StatelessWidget {
   const _Time({  
     required this.startTime,
     required this.endTime,
-    super.key,
   });
 
   @override
@@ -44,7 +43,6 @@ class _Content extends StatelessWidget {
 
   const _Content({  
     required this.content,
-    super.key,
   });
 
   @override
